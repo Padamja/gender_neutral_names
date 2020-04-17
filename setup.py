@@ -6,14 +6,14 @@ from setuptools import setup
 
 
 DIR = dirname(abspath(__file__))
-VERSION = 0.1
+VERSION = '0.2'
 
 with fopen(join(DIR, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
     name = 'gender_neutral_name',
-    version = '0.1',
+    version = VERSION,
     description = 'Faker provider for gender neutral name generator',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
@@ -21,8 +21,8 @@ setup(
     author = 'Padamja',
     author_email = 'padamja.gupta@gmail.com',
     license='MIT',
-    url = 'https://github.com/Padamja/FakerCustomProvider',
-    download_url = 'https://github.com/Padamja/FakerCustomProvider/archive/v{0}.tar.gz'.format(VERSION),
+    url = 'https://github.com/Padamja/gender_neutral_name',
+    download_url = 'https://github.com/Padamja/gender_neutral_name/archive/v{0}.tar.gz'.format(VERSION),
     zip_safe = True,
     classifiers = [
         'Development Status :: 4 - Beta',
