@@ -1,9 +1,8 @@
-#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
 from codecs import open as fopen
 from os.path import dirname, abspath, join
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 DIR = dirname(abspath(__file__))
@@ -32,7 +31,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2 :: Only',
     ],
-    packages = find_packages(exclude=['data', 'gender_neutral_name']),
+    packages = ['gender_neutral_name'],
     install_requires = [
         'Faker'
     ],
