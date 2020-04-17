@@ -6,7 +6,7 @@ from setuptools import setup
 
 
 DIR = dirname(abspath(__file__))
-VERSION = '0.2'
+VERSION = '0.3'
 
 with fopen(join(DIR, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
