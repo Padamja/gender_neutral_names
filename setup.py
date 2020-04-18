@@ -6,7 +6,7 @@ from setuptools import setup
 
 
 DIR = dirname(abspath(__file__))
-VERSION = '0.3'
+VERSION = '0.4'
 
 with fopen(join(DIR, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
@@ -32,7 +32,9 @@ setup(
         'Programming Language :: Python :: 2 :: Only',
     ],
     packages = ['gender_neutral_name'],
+    # package_data={'gender_neutral_name':['data/*.json']},
     install_requires = [
         'Faker'
     ],
+    include_package_data=True,
 )
