@@ -15,6 +15,6 @@ class GenderNeutralNameProvider(BaseProvider):
 
     def name(self):
         return '{adjective} {name}'.format(
-            adjective=self.random_element(elements=self.adjectives).capitalize(),
-            name=self.random_element(elements=self.names).capitalize()
+            adjective=self.random_element(elements=self.adjectives).capitalize().encode("utf-8"),
+            name=self.random_element(elements=self.names).capitalize().encode("utf-8")
         )
